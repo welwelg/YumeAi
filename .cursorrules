@@ -1,0 +1,15 @@
+# Project Rules
+
+## Tech Stack
+- Frontend: Next.js 14, Tailwind CSS, shadcn/ui, Lucide React
+- Backend: FastAPI, Pydantic, Supabase
+- AI: Google Gen AI SDK (`google-genai`)
+
+## AI Model Specifics
+- Text Model: Use "gemini-1.5-flash" for JSON extraction.
+- Image Model: Use "gemini-2.5-flash-image" (Nano Banana) for images.
+- Always use structured output (JSON schema) when parsing text.
+
+## Backend Rules
+- Use Pydantic V2 for all data validation.
+- Return raw Base64 images for the MVP (easier than S3 setup initially), but plan for Supabase Storage later.
