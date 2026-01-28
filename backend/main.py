@@ -27,7 +27,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
-@app.get("/") 
+@app.get("/healthz") 
 async def health_check():
     return {"status": "healthy", "message": "YumeAI Backend is running"}
 
