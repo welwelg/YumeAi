@@ -10,7 +10,7 @@ class Panel(BaseModel):
     panel_index: int
     narrative_description: str = Field(..., description="Story action")
     visual_prompt: str = Field(..., description="Image generation prompt")
-    negative_prompt: str = Field(..., description="What to avoid") # No default here
+    negative_prompt: str = Field(..., description="What to avoid")
     camera_angle: str = Field(..., description="Camera angle")
 
 class Scene(BaseModel):
@@ -30,4 +30,4 @@ class AnalysisRequest(BaseModel):
 
 class ImageGenRequest(BaseModel):
     prompt: str
-    aspect_ratio: str = "16:9"
+    aspect_ratio: str = "16:9"  

@@ -10,7 +10,7 @@ create table if not exists public.panels (
   image_url text,
   display_order int,
   created_at timestamptz default now()
-); 
+);
 
 --User_sessions table
 create table if not exists public.user_sessions (
@@ -19,6 +19,7 @@ create table if not exists public.user_sessions (
   input_text text,
   created_at timestamptz default now()
 );
+
 
 --story_analyses table
 create table if not exists public.story_analyses (
@@ -29,3 +30,4 @@ create table if not exists public.story_analyses (
   scenes jsonb,
   created_at timestamptz default now()
 );
+
